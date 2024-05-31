@@ -12,5 +12,11 @@ public class TestePessoa {
         Assertions.assertTrue(rodrigo.ehMaior());
     }
 
+    @Test
+    void deveCalcularIdadeCorretamente(){
+        Pessoa rodrigo = new Pessoa("Rodrigo", 21);
+        Assertions.assertEquals(2003, rodrigo.calculaAnoNascimeto());
+    }
+
 
 }
